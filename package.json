@@ -1,0 +1,19 @@
+{
+  "name": "chattest",
+  "version": "1.0.0",
+  "description": "Learning node by testing its ability as a chat server.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesgmarks/chatbot.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "James Marks",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
