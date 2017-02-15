@@ -18,7 +18,8 @@
     "express": "^4.14.1",
     "express-validator": "^3.1.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "ws": "^2.0.3"
   },
   "bugs": {
     "url": "https://github.com/jamesgmarks/chatbot/issues"

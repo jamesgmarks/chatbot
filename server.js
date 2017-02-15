@@ -1,9 +1,21 @@
 var express = require('express');
-var app = express();
 var bodyParser = require('body-parser');
+var WebSocket = require('ws');
 // About express-validator: 
 //     https://booker.codes/input-validation-in-express-with-express-validator/
 var validator = require('express-validator');
+
+var config = {
+    httpPort: 3099,
+    wssPort: 8080
+}
+
+var app = express();
+
+var wss = new WebSocket.Server({
+  perMessageDeflate: false,
+  port: config.wssPort
+});
 
 var guid = function() {
   function s4() {
@@ -66,5 +78,5 @@ loginRouter.route('')
 app.use('/login', loginRouter);
 
 // TODO: configurable port #
-app.listen(99);
-console.log("App listening at 99.");
+app.listen(config.port);
+console.log("App listening at " + config.port + ".");
