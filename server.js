@@ -17,6 +17,13 @@ var wss = new WebSocket.Server({
   port: config.wssPort
 });
 
+wss.on('connection', function connection(ws) {
+    
+  ws.on('message', function incoming(message) {
+    console.log('received: %s', message);
+  });
+});
+
 var guid = function() {
   function s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
