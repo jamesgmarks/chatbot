@@ -5,7 +5,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamesgmarks/chatbot.git"
+    "url": "git+https://github.com/jamesgmarks/chatbot.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,14 @@
   "author": "James Marks",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  }
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-validator": "^3.1.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesgmarks/chatbot/issues"
+  },
+  "homepage": "https://github.com/jamesgmarks/chatbot#readme"
 }
