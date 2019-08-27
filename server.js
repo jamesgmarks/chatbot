@@ -85,5 +85,5 @@ loginRouter.route('')
 app.use('/login', loginRouter);
 
 // TODO: configurable port #
-app.listen(config.port);
-console.log("App listening at " + config.port + ".");
+app.listen(config.httpPort);
+console.log("App listening at " + config.httpPort + ".");

@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "startmon": "nodemon server.js"
   },
   "author": "James Marks",
   "license": "ISC",
@@ -19,7 +20,7 @@
     "express-validator": "^3.1.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "ws": "^2.0.3"
+    "ws": "^7.1.2"
   },
   "bugs": {
     "url": "https://github.com/jamesgmarks/chatbot/issues"
